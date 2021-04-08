@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.duck;
+package com.salah.introtodesignpatterns.strategy;
 
 public class FlyNoWay implements FlyBehavior {
     @Override
