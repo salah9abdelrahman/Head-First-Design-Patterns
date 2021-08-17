@@ -1,14 +1,17 @@
 package com.salah.introtodesignpatterns.singleton;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 /*
 PS:  This way has a problem with serialization and Reflection
- Solution: use enum with Singleton
+ Approach 1: declare all  instance fields transient and provide readResolve method
+  Approach 2: use enum to implement Singleton
+
  */
 public class Singleton implements Serializable {
     private volatile static Singleton instance;
-    private int value;
+    private transient int value;
 
     private Singleton() {
     }
@@ -34,5 +37,9 @@ public class Singleton implements Serializable {
 
     public void setValue(int value) {
         this.value = value;
+    }
+
+    private Object readResolve() {
+        return instance;
     }
 }
