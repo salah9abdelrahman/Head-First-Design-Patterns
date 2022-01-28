@@ -35,11 +35,6 @@ public class Housing implements IStructure {
 
     }
 
-    public void enter() {
-        System.out.println("You have entered the " +
-                this.getName());
-    }
-
     public void exit() {
         System.out.println("You have left the " +
                 this.getName());
