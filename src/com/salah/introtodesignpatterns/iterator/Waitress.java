@@ -1,33 +1,27 @@
 package com.salah.introtodesignpatterns.iterator;
 
 import java.util.Iterator;
+import java.util.List;
 
 public class Waitress {
-    Menu pancakeHouseMenu;
+    List<Menu> menus;
 
-    Menu dinnerMenu;
-
-    public Waitress(Menu pancakeHouseMenu, Menu dinnerMenu) {
-        this.pancakeHouseMenu = pancakeHouseMenu;
-        this.dinnerMenu = dinnerMenu;
+    public Waitress(List<Menu> menus) {
+        this.menus = menus;
     }
 
     public void printMenu() {
-        Iterator<MenuItem> pancakeIterator = pancakeHouseMenu.createIterator();
-        Iterator<MenuItem> dinnerIterator = dinnerMenu.createIterator();
-        System.out.println("Pancake House Menu");
-        printMenu(pancakeIterator);
-
-        System.out.println("Dinner Menu");
-        printMenu(dinnerIterator);
-
-
+        for (Menu menu: menus
+             ) {
+            Iterator<MenuItem> iterator = menu.createIterator();
+            printMenu(iterator);
+        }
     }
 
 
     private void printMenu(Iterator<MenuItem> iterator) {
         while (iterator.hasNext()) {
-            MenuItem menuItem = (MenuItem) iterator.next();
+            MenuItem menuItem = iterator.next();
             System.out.println(menuItem);
         }
     }
