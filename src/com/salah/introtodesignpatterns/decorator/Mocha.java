@@ -1,5 +1,8 @@
 package com.salah.introtodesignpatterns.decorator;
 
+/**
+ * Concrete Decorator
+ */
 public class Mocha extends CondimentDecorator {
     Beverage beverage;
 

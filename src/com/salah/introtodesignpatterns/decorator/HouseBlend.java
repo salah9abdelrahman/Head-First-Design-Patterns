@@ -1,5 +1,8 @@
 package com.salah.introtodesignpatterns.decorator;
 
+/**
+ * Concrete Component that we're going to dynamically add new behavior to it.
+ */
 public class HouseBlend extends Beverage {
 
     public HouseBlend() {

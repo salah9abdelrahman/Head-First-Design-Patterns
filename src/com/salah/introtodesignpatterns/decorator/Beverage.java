@@ -1,5 +1,8 @@
 package com.salah.introtodesignpatterns.decorator;
 
+/**
+ * Component
+ */
 public abstract class Beverage {
      String description = "Unknown Beverage";
 

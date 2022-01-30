@@ -1,6 +1,6 @@
 package com.salah.introtodesignpatterns.decorator;
 
-public class StarbuzzCoffee {
+public class Main {
     public static void main(String[] args) {
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription() + " $" + beverage.cost());
