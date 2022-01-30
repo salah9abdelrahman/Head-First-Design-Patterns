@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.decorator;
+package com.salah.introtodesignpatterns.decorator.coffee;
 
 /**
  * Abstract Decorator

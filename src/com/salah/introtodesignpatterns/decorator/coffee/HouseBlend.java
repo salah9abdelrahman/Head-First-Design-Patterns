@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.decorator;
+package com.salah.introtodesignpatterns.decorator.coffee;
 
 /**
  * Concrete Component that we're going to dynamically add new behavior to it.
