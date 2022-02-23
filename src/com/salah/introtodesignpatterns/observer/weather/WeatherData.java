@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.observer;
+package com.salah.introtodesignpatterns.observer.weather;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ public class WeatherData implements Subject {
         }
     }
 
-    public void measurementsChanged() {
+    private void measurementsChanged() {
         notifyObserver();
     }
 

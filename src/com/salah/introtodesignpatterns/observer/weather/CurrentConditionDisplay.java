@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.observer;
+package com.salah.introtodesignpatterns.observer.weather;
 
 public class CurrentConditionDisplay implements Observer, DisplayElement {
     private float temperature;

@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.observer;
+package com.salah.introtodesignpatterns.observer.weather;
 
 
 public class StatisticsDisplay implements Observer, DisplayElement {

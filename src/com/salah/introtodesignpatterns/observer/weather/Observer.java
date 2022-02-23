@@ -1,4 +1,4 @@
-package com.salah.introtodesignpatterns.observer;
+package com.salah.introtodesignpatterns.observer.weather;
 
 public interface Observer {
     void update(float temp, float humidity, float pressure);

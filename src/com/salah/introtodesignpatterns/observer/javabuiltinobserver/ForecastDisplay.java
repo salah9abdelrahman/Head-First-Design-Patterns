@@ -1,6 +1,6 @@
 package com.salah.introtodesignpatterns.observer.javabuiltinobserver;
 
-import com.salah.introtodesignpatterns.observer.DisplayElement;
+import com.salah.introtodesignpatterns.observer.weather.DisplayElement;
 
 import java.util.Observable;
 import java.util.Observer;

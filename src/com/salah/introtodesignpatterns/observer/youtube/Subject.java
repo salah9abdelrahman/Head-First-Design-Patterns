@@ -1,13 +1,10 @@
-package com.salah.introtodesignpatterns.observer;
+package com.salah.introtodesignpatterns.observer.youtube;
 
-/**
- * Observable interface
- */
+
 public interface Subject {
     void registerObserver(Observer observer);
 
     void removeObserver(Observer observer);
 
-    void notifyObserver();
-
+    void notifyObservers();
 }
